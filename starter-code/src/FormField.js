@@ -10,7 +10,7 @@ class FormField extends Component {
           <div className="control">
             <input
               className="input"
-              type="text"
+              type={this.props.type}
               placeholder={this.props.placeholder}
             />
           </div>

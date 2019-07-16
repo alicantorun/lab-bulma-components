@@ -40,6 +40,11 @@ class CoolButton extends Component {
       }
     });
 
+    Object.keys(this.props).forEach(key => {
+      if (key === "className") allClasses += this.props[key] + " ";
+      else if (key !== "children") allClasses += bulmaButtons[key] + " ";
+    });
+
     // const allClasses = `
     // button
     // ${this.props.className ? this.props.className : ""}
